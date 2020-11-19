@@ -490,13 +490,15 @@ template {
   .logo {
     width: 132px;
   }
+  .search__input {
+    width: 340px;
+  }
   .navbar-top {
     padding-top: 30px;
     padding-bottom: 30px;
   }
   .navbar__search {
     margin-left: auto;
-    max-width: 340px;
   }
   .navbar-menu {
     padding-top: 22px;
@@ -532,6 +534,7 @@ template {
             flex-direction: column;
     height: 11px;
     width: 16px;
+    padding: 0;
     border: none;
     background-color: #fff;
   }
