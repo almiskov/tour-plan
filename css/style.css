@@ -512,8 +512,7 @@ template {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 576px;
-    width: 92%;
+    max-width: 530px;
   }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
@@ -546,8 +545,17 @@ template {
 }
 
 @media (max-width: 576px) {
+  .container {
+    max-width: 400px;
+  }
   .logo {
     width: 99px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    max-width: 280px;
   }
 }
 /*# sourceMappingURL=style.css.map */
