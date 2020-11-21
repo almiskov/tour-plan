@@ -596,6 +596,11 @@ template {
   line-height: 18px;
 }
 
+.rating__counter-total {
+  font-size: 10px;
+  line-height: 13px;
+}
+
 @media (max-width: 1199px) {
   .container {
     max-width: 960px;
