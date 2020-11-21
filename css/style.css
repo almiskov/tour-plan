@@ -481,13 +481,13 @@ template {
   color: #333333;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1999px) {
   .container {
     max-width: 960px;
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .container {
     max-width: 700px;
   }
@@ -514,12 +514,16 @@ template {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container {
     max-width: 530px;
   }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
+  }
+  .navbar-top {
+    padding-top: 28px;
+    padding-bottom: 28px;
   }
   .navbar .menu-button {
     display: -webkit-box;
@@ -548,7 +552,7 @@ template {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   .container {
     max-width: 400px;
   }
@@ -557,7 +561,7 @@ template {
   }
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 479px) {
   .container {
     max-width: 280px;
   }
