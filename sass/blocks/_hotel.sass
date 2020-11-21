@@ -12,7 +12,7 @@
       margin-top: 4px
       margin-bottom: 0
     &__description
-      margin-top: 5px
+      margin-top: 0
       margin-bottom: 0
   &-name
     font-size: 24px
@@ -26,6 +26,10 @@
     line-height: 15px
 .stars
   flex-basis: 100%
+  display: flex
+.star
+  &:not(:last-child)
+    margin-right: 2px
 .offer
   font-size: 10px
   line-height: 13px

@@ -48,6 +48,7 @@
   .stars
     flex-basis: auto
   .hotel
+    padding-top: 5px
     &-name
       flex-basis: 100%
     &-wrapper
@@ -62,6 +63,7 @@
       &__offer
         order: -1
         margin-left: 0
+        margin-top: 0
 @media (max-width: 575px)
   .container
     max-width: 400px
@@ -70,3 +72,6 @@
 @media (min-width: 320px) and (max-width: 479px)
   .container
     max-width: 280px
+  .hotel
+    &__stars
+      margin-right: 16px
