@@ -426,6 +426,11 @@ template {
 
 .logo {
   width: 177px;
+  height: 24px;
+}
+
+.logo__img {
+  height: inherit;
 }
 
 .search {
@@ -627,6 +632,7 @@ template {
   }
   .logo {
     width: 132px;
+    height: 18px;
   }
   .search__input {
     width: 340px;
@@ -724,6 +730,7 @@ template {
   }
   .logo {
     width: 99px;
+    height: 14px;
   }
 }
 
