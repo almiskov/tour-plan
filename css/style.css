@@ -624,7 +624,7 @@ template {
 .swiper-container {
   position: relative;
   width: 100%;
-  height: 450px;
+  max-height: 450px;
   border-radius: 8px;
 }
 
@@ -642,7 +642,7 @@ template {
 
 .slider {
   position: relative;
-  width: 728px;
+  max-width: 728px;
 }
 
 .slider-button {
@@ -787,6 +787,9 @@ template {
 @media (min-width: 320px) and (max-width: 479px) {
   .container {
     max-width: 280px;
+  }
+  .hotel-info {
+    padding-bottom: 38px;
   }
   .hotel__stars {
     margin-right: 16px;
