@@ -1,0 +1,94 @@
+.reviews
+  padding: 40px 0 70px 0
+  &__title
+    margin-bottom: 70px
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+  &-slider
+    position: relative
+    &__item
+      position: relative
+      display: flex
+      flex-direction: column
+      align-items: center
+      width: 730px
+      margin: 45px auto 0
+      padding: 0 62px 30px
+      background-color: #fff
+      border-radius: 8px
+      &:before
+        content: ''
+        position: absolute
+        left: 64px
+        top: 13px
+        width: 70px
+        height: 47px
+        background-image: url(../img/quote-left.svg)
+      &:after
+        content: ''
+        position: absolute
+        right: 60px
+        top: 119px
+        width: 70px
+        height: 47px
+        background-image: url(../img/quote-right.svg)
+    &__profile
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-top: -45px
+      margin-bottom: 32px
+    &__avatar
+      width: 90px
+      height: 90px
+      margin-bottom: 9px
+      border-radius: 50%
+      object-fit: cover
+    &__username
+      margin-top: 0
+      margin-bottom: 10px
+      color: $primary
+      font-style: normal
+      font-weight: bold
+      font-size: 12px
+      line-height: 15px
+    &__date
+      margin-bottom: 4px
+      font-style: normal
+      font-weight: normal
+      font-size: 10px
+      line-height: 13px
+      color: #000000
+    &__rating
+      display: flex
+    &__text
+      max-width: 537px
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 160%
+      text-align: justify
+      margin: auto
+    &__button
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      z-index: 2
+      height: 30px
+      width: 30px
+      border: none
+      background-size: 10px
+      background-color: transparent
+      background-repeat: no-repeat
+      background-position: center
+      &-prev
+        left: 0
+        background-image: url(../img/reviews-arrow-prev.svg)
+
+      &-next
+        right: 0
+        background-image: url(../img/reviews-arrow-next.svg)
