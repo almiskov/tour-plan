@@ -2,7 +2,7 @@
   .container
     max-width: 960px
 @media (max-width: 991px)
-  .container
+  .container, .newsletter-wrapper
     max-width: 700px
   .logo
     width: 132px
@@ -65,17 +65,38 @@
         order: -1
         margin-left: 0
         margin-top: 0
+  .newsletter
+    padding: 76px 0 83px 0
+    &-wrapper
+      max-width: 530px
+      flex-direction: column
+      align-items: start
+    &-title
+      font-weight: 300
+      font-size: 20px
+      line-height: 25px
+      &__strong
+        font-weight: 600
+        font-size: 30px
+        line-height: 38px
+    &__subscribe
+      margin-top: 37px
 @media (max-width: 575px)
-  .container
+  .container, .newsletter-wrapper
     max-width: 400px
   .logo
     width: 99px
     height: 14px
+  .subscribe
+    width: 100%
 @media (min-width: 320px) and (max-width: 479px)
-  .container
+  .container, .newsletter-wrapper
     max-width: 280px
   .hotel
     &-info
       padding-bottom: 38px
     &__stars
       margin-right: 16px
+  .subscribe
+    &__input
+      padding-left: 20px
