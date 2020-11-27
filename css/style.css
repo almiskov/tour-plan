@@ -22,10 +22,6 @@ button:focus {
   outline: 0;
 }
 
-img {
-  max-width: 100%;
-}
-
 input:focus {
   outline: none;
 }
@@ -597,14 +593,22 @@ template {
 .hotel-slider {
   width: 728px;
   height: 450px;
+  margin: 0;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .hotel-slider__item {
   position: relative;
   width: 100%;
   height: 100%;
-  border-radius: 8px;
-  overflow: hidden;
+}
+
+.hotel-slider__item-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .hotel-slider__item:after {
@@ -815,9 +819,10 @@ template {
 }
 
 .map {
-  width: 347px;
+  width: 350px;
   height: 213px;
-  border-radius: 4px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .newsletter {
@@ -1050,6 +1055,9 @@ template {
 @media (max-width: 1199px) {
   .container {
     max-width: 960px;
+  }
+  .hotel-slider {
+    width: 580px;
   }
 }
 
