@@ -38,7 +38,23 @@
           display: none
         &:after
           display: none
-
+  .hotel
+    padding-bottom: 60px
+    &-grid
+      flex-wrap: wrap
+    &-slider
+      flex-basis: 100%
+    &-right
+      margin-top: 30px
+      flex-basis: 100%
+      flex-direction: row
+      justify-content: space-between
+  .booking
+    width: 340px
+    padding-left: 22px
+    padding-right: 22px
+  .map
+    width: 340px
 @media (max-width: 767px)
   .container
     max-width: 530px
@@ -65,8 +81,17 @@
           background-color: $text-color
   .stars
     flex-basis: auto
+  .booking
+    flex-basis: 100%
+  .map
+    flex-basis: 100%
+    margin-top: 20px
   .hotel
     padding-top: 5px
+    &-right
+      flex-wrap: wrap
+    &-slider
+      height: 350px
     &-name
       flex-basis: 100%
     &-wrapper
@@ -132,10 +157,25 @@
   .container, .newsletter-wrapper
     max-width: 280px
   .hotel
+    padding-bottom: 40px
     &-info
       padding-bottom: 38px
     &__stars
       margin-right: 16px
+    &-right
+      margin-top: 20px
+    &-slider
+      height: 179px
+      &__button
+        height: 12px
+        width: 12px
+        background-size: 4px
+        &-prev
+          left: 10px
+        &-next
+          right: 10px
+  .booking, .map
+    width: auto
   .subscribe
     &__input
       padding-left: 20px

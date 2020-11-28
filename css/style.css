@@ -820,7 +820,7 @@ template {
 
 .map {
   width: 350px;
-  height: 213px;
+  height: 215px;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -1104,6 +1104,37 @@ template {
   .reviews-slider__item:after {
     display: none;
   }
+  .hotel {
+    padding-bottom: 60px;
+  }
+  .hotel-grid {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .hotel-slider {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .hotel-right {
+    margin-top: 30px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .booking {
+    width: 340px;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+  .map {
+    width: 340px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1146,8 +1177,24 @@ template {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
   }
+  .booking {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .map {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-top: 20px;
+  }
   .hotel {
     padding-top: 5px;
+  }
+  .hotel-right {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .hotel-slider {
+    height: 350px;
   }
   .hotel-name {
     -ms-flex-preferred-size: 100%;
@@ -1246,11 +1293,34 @@ template {
   .container, .newsletter-wrapper {
     max-width: 280px;
   }
+  .hotel {
+    padding-bottom: 40px;
+  }
   .hotel-info {
     padding-bottom: 38px;
   }
   .hotel__stars {
     margin-right: 16px;
+  }
+  .hotel-right {
+    margin-top: 20px;
+  }
+  .hotel-slider {
+    height: 179px;
+  }
+  .hotel-slider__button {
+    height: 12px;
+    width: 12px;
+    background-size: 4px;
+  }
+  .hotel-slider__button-prev {
+    left: 10px;
+  }
+  .hotel-slider__button-next {
+    right: 10px;
+  }
+  .booking, .map {
+    width: auto;
   }
   .subscribe__input {
     padding-left: 20px;
