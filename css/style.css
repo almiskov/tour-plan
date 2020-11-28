@@ -708,9 +708,8 @@ template {
 }
 
 .booking {
-  padding: 28px;
+  padding: 29px 26px 26px 26px;
   width: 350px;
-  min-height: 210px;
   font-family: "Nunito", sans-serif;
   border-radius: 8px;
   background-color: #0A223D;
@@ -750,6 +749,7 @@ template {
 }
 
 .booking__per-room {
+  margin-top: -4px;
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
@@ -824,7 +824,7 @@ template {
 
 .map {
   width: 350px;
-  height: 215px;
+  height: 210px;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -916,6 +916,7 @@ template {
 }
 
 .reviews__title {
+  margin-top: 0;
   margin-bottom: 70px;
   font-style: normal;
   font-weight: bold;
@@ -1019,6 +1020,8 @@ template {
 
 .reviews-slider__text {
   max-width: 537px;
+  max-height: 114px;
+  overflow-y: auto;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -1029,9 +1032,7 @@ template {
 
 .reviews-slider__button {
   position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  top: 134px;
   z-index: 2;
   height: 30px;
   width: 30px;
@@ -1190,6 +1191,12 @@ template {
     margin-bottom: 50px;
     font-size: 30px;
     line-height: 38px;
+  }
+  .reviews-slider__button {
+    top: 157px;
+  }
+  .reviews-slider__text {
+    max-height: 133px;
   }
   .reviews-slider__item {
     max-width: 580px;
@@ -1361,6 +1368,8 @@ template {
     width: 100%;
   }
   .reviews-slider__button {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     top: 45px;
   }
   .reviews-slider__button-prev {
@@ -1447,6 +1456,9 @@ template {
   }
   .subscribe__input {
     padding-left: 20px;
+  }
+  .reviews-slider__text {
+    max-height: 266px;
   }
   .reviews__title {
     margin-left: auto;
