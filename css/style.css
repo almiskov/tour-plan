@@ -1396,6 +1396,17 @@ template {
   line-height: 15px;
 }
 
+.footer {
+  padding: 108px 0 46px 0;
+  background-color: #0A223D;
+  color: #ffffff;
+}
+
+.footer-wrapper {
+  display: -ms-grid;
+  display: grid;
+}
+
 @media (max-width: 1199px) {
   .container {
     max-width: 960px;
