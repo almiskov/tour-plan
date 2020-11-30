@@ -1859,5 +1859,8 @@ template {
     font-size: 18px;
     line-height: 23px;
   }
+  .newsletter-title__strong {
+    margin-top: 5px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
