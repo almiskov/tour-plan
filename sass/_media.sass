@@ -12,6 +12,11 @@
   .package
     &__description
       font-size: 13px
+  .footer
+    &__input
+      flex-basis: 100%
+    &__bottom
+      width: 590px
 @media (max-width: 991px)
   .container, .newsletter-wrapper
     max-width: 700px
@@ -91,6 +96,39 @@
   .package
     &__description
       font-size: 14px
+  .footer
+    padding-top: 73px
+    padding-bottom: 33px
+    &-wrapper
+      grid-template-columns: minmax(162px, 1fr) minmax(260px, 1fr) minmax(202px, 1fr)
+      row-gap: 60px
+      column-gap: 38px
+    &__logo
+      grid-row: 1 / 2
+      width: 104px
+    &__social
+      grid-row: 1 / 2
+      grid-column: 2 / 4
+      align-self: center
+    &__additional
+      justify-self: flex-end
+    &__categories
+      grid-row: 2 / 3
+    &__contact
+      &-details
+        grid-column: span 3
+      &-form
+        grid-column: span 3
+    &__form
+      width: 539px
+    &__input
+      flex-basis: auto
+    &__bottom
+      width: 100%
+      margin-top: 56px
+    &__title
+      &_inline
+        margin-right: 41px
 @media (max-width: 767px)
   .container
     max-width: 530px
