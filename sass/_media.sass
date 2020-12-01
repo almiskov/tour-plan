@@ -94,9 +94,55 @@
 @media (max-width: 767px)
   .container
     max-width: 530px
+  body
+    padding-top: 74px
+  .search
+    &__input
+      width: 245px
+  .user
+    &__name
+      margin: 10px 0 0 0
+      color: $light
   .navbar
-    &__search, &-menu, &__user
+    &__user
+      flex-direction: column
+      justify-content: space-between
+      align-items: center
+    &__search, &__user
+      &_mobile
+        &_hidden
+          display: none
+        &_visible
+          display: flex
+    &_mobile
+      &_fixed
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        z-index: 5
+    &-bottom
       display: none
+      position: fixed
+      left: 0
+      right: 0
+      bottom: 0
+      top: 74px
+      &_visible
+        display: block
+    &-menu
+      padding-top: 31px
+      flex-direction: column
+      &__item
+        &:not(:last-child)
+          margin-bottom: 20px
+        &_mobile
+          &_visible
+            display: list-item
+            &:nth-child(1)
+              margin-bottom: 27px
+            &:nth-child(2)
+              margin-bottom: 39px
     &-top
       padding-top: 28px
       padding-bottom: 28px
@@ -213,6 +259,9 @@
   .logo
     width: 99px
     height: 14px
+  .navbar
+    &-bottom
+      top: 70px
   .subscribe
     width: 100%
   .reviews

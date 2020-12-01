@@ -25,3 +25,9 @@ var reviewsSlider = new Swiper('.reviews-slider', {
     enabled: true,
   }
 })
+
+const menuButton = document.querySelector('.menu-button')
+menuButton.addEventListener('click', () => {
+  console.log('henlo')
+  document.querySelector('.navbar-bottom').classList.toggle('navbar-bottom_visible')
+})
