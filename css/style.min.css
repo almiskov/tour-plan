@@ -25,6 +25,10 @@ input:focus {
   outline: none;
 }
 
+textarea:focus {
+  outline: none;
+}
+
 img {
   max-width: 100%;
 }
@@ -1304,6 +1308,10 @@ template {
   grid-column: span 2;
 }
 
+.footer__contact-form {
+  grid-column: span 2;
+}
+
 .footer__title {
   margin-top: 0;
   margin-bottom: 16px;
@@ -1324,7 +1332,13 @@ template {
   list-style: none;
 }
 
+.footer__ul_bottom {
+  display: flex;
+}
+
 .footer__item {
+  display: flex;
+  align-items: flex-start;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1332,9 +1346,103 @@ template {
   color: #BDBDBD;
 }
 
+.footer__item_bottom {
+  margin-right: 12px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+
+.footer__text {
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: #BDBDBD;
+}
+
 .footer__link {
   text-decoration: none;
   color: inherit;
+}
+
+.footer__icon-wrapper {
+  min-width: 40px;
+}
+
+.footer__form {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer__input {
+  padding: 0 23px;
+  height: 50px;
+  width: 255px;
+  border-radius: 4px;
+  border: none;
+  background-color: #ffffff;
+}
+
+.footer__message {
+  flex-basis: 100%;
+  margin-top: 15px;
+  margin-bottom: 22px;
+  padding: 18px 23px;
+  height: 123px;
+  border-radius: 4px;
+  border: none;
+  background-color: #ffffff;
+  resize: none;
+}
+
+.footer__button {
+  padding: 18px;
+  min-width: 160px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  border-radius: 4px;
+  border: none;
+  background-color: #EC1F46;
+  color: #ffffff;
+}
+
+.footer__info {
+  align-self: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #E0E0E0;
+}
+
+.footer__bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-top: 95px;
+  width: 700px;
+}
+
+.footer__legal {
+  justify-self: flex-end;
+}
+
+.contact-details__title {
+  margin-bottom: 34px;
+}
+
+.contact-details__item:not(:last-child) {
+  margin-bottom: 22px;
+}
+
+.contact-form__title {
+  margin-bottom: 34px;
 }
 
 @media (max-width: 1199px) {

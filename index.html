@@ -24,7 +24,10 @@
             />
           </a>
 
-          <form action="#" class="search navbar__search navbar__search_mobile_hidden">
+          <form
+            action="#"
+            class="search navbar__search navbar__search_mobile_hidden"
+          >
             <input
               type="text"
               class="search__input"
@@ -69,7 +72,10 @@
               </a>
             </li>
             <li class="navbar-menu__item navbar-menu__item_mobile_visible">
-              <form action="#" class="search navbar__search navbar__search_mobile_visible">
+              <form
+                action="#"
+                class="search navbar__search navbar__search_mobile_visible"
+              >
                 <input
                   type="text"
                   class="search__input"
@@ -891,22 +897,13 @@
             <h3 class="footer__title footer__title_inline">Social Network</h3>
             <div class="footer__social-links">
               <a href="#" class="footer__link">
-                <img
-                  src="./img/footer/fb.svg"
-                  alt="Icon: Facebook"
-                  class="footer__icon"
+                <img src="./img/footer/fb.svg" alt="Icon: Facebook"
               /></a>
               <a href="#" class="footer__link">
-                <img
-                  src="./img/footer/yt.svg"
-                  alt="Icon: YouTube"
-                  class="footer__icon"
+                <img src="./img/footer/yt.svg" alt="Icon: YouTube"
               /></a>
               <a href="#" class="footer__link">
-                <img
-                  src="./img/footer/inst.svg"
-                  alt="Icon: Instagram"
-                  class="footer__icon"
+                <img src="./img/footer/inst.svg" alt="Icon: Instagram"
               /></a>
             </div>
           </div>
@@ -929,33 +926,56 @@
             </ul>
           </div>
           <!-- /.footer__list -->
-          <div class="footer__contact-details">
-            <h3 class="footer__title">Contact Details</h3>
+          <div class="contact-details footer__contact-details">
+            <h3 class="footer__title contact-details__title">
+              Contact Details
+            </h3>
             <p class="footer__text">
               Feel free to contact us by phone, email or by our contact form
             </p>
             <ul class="footer__ul">
-              <li class="footer__item">
-                <img src="./img/footer/map-marker.svg" alt="Icon: map marker" />
+              <li class="footer__item contact-details__item">
+                <div class="footer__icon-wrapper">
+                  <img
+                    class="footer__icon"
+                    src="./img/footer/map-marker.svg"
+                    alt="Icon: map marker"
+                  />
+                </div>
+                <!-- /.footer__icon-wrapper -->
                 9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
                 States
               </li>
-              <li class="footer__item">
-                <img src="./img/footer/phone-call.svg" alt="Icon: phone call" />
+              <li class="footer__item contact-details__item">
+                <div class="footer__icon-wrapper">
+                  <img
+                    class="footer__icon"
+                    src="./img/footer/phone-call.svg"
+                    alt="Icon: phone call"
+                  />
+                </div>
+                <!-- /.footer__icon-wrapper -->
                 Tel (business hours) : 269 1500<br />
                 Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
                 pm)<br />
                 Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
               </li>
-              <li class="footer__item">
-                <img src="./img/footer/mail.svg" alt="Icon: mail" />
+              <li class="footer__item contact-details__item">
+                <div class="footer__icon-wrapper">
+                  <img
+                    class="footer__icon"
+                    src="./img/footer/mail.svg"
+                    alt="Icon: mail"
+                  />
+                </div>
+                <!-- /.footer__icon-wrapper -->
                 cherly.lawson@example.com
               </li>
             </ul>
           </div>
           <!-- /.footer__contact-details -->
-          <div class="footer__contact-form">
-            <h3 class="footer__title">Send us a message</h3>
+          <div class="contact-form footer__contact-form">
+            <h3 class="footer__title contact-form__title">Send us a message</h3>
             <form action="#" class="footer__form">
               <input
                 type="text"
@@ -978,6 +998,25 @@
           <!-- /.footer__contact-form -->
         </div>
         <!-- /.footer-wrapper -->
+        <div class="footer__bottom">
+          <ul class="footer__ul footer__ul_bottom">
+            <li class="footer__item_bottom">
+              <a href="#" class="footer__link"> Disclaimer </a>
+            </li>
+            <li class="footer__item_bottom">
+              <a href="#" class="footer__link"> Conditions of use </a>
+            </li>
+            <li class="footer__item_bottom">
+              <a href="#" class="footer__link"> Cancellation policy </a>
+            </li>
+          </ul>
+          <img
+            src="./img/footer/payment-systems.png"
+            alt="Image: payment systems"
+            class="payment-systems"
+          />
+        </div>
+        <!-- /.footer__bottom -->
       </div>
       <!-- /.container -->
     </footer>

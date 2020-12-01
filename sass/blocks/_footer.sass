@@ -28,6 +28,8 @@
   &__contact
     &-details
       grid-column: span 2
+    &-form
+      grid-column: span 2
   &__title
     margin-top: 0
     margin-bottom: 16px
@@ -42,12 +44,89 @@
     margin: 0
     padding: 0
     list-style: none
+    &_bottom
+      display: flex
   &__item
+    display: flex
+    align-items: flex-start
     font-style: normal
     font-weight: normal
     font-size: 14px
     line-height: 160%
     color: $footer-text-color
+    &_bottom
+      margin-right: 12px
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: #FFFFFF
+  &__text
+    margin-top: 0
+    margin-bottom: 24px
+    color: $footer-text-color
   &__link
     text-decoration: none
     color: inherit
+  &__icon
+    &-wrapper
+      min-width: 40px
+  &__form
+    display: flex
+    align-items: start
+    justify-content: space-between
+    flex-wrap: wrap
+  &__input
+    padding: 0 23px
+    height: 50px
+    width: 255px
+    border-radius: 4px
+    border: none
+    background-color: $light
+  &__message
+    flex-basis: 100%
+    margin-top: 15px
+    margin-bottom: 22px
+    padding: 18px 23px
+    height: 123px
+    border-radius: 4px
+    border: none
+    background-color: $light
+    resize: none
+  &__button
+    padding: 18px
+    min-width: 160px
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    border-radius: 4px
+    border: none
+    background-color: #EC1F46
+    color: #ffffff
+  &__info
+    align-self: center
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: #E0E0E0
+  &__bottom
+    display: flex
+    align-items: flex-end
+    justify-content: space-between
+    margin-left: auto
+    margin-top: 95px
+    width: 700px
+  &__legal
+    justify-self: flex-end
+.contact
+  &-details
+    &__title
+      margin-bottom: 34px
+    &__item
+      &:not(:last-child)
+        margin-bottom: 22px
+  &-form
+    &__title
+      margin-bottom: 34px
