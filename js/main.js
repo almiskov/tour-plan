@@ -28,5 +28,10 @@ var reviewsSlider = new Swiper('.reviews-slider', {
 
 const menuButton = document.querySelector('.menu-button')
 menuButton.addEventListener('click', () => {
-  document.querySelector('.navbar-bottom').classList.toggle('navbar-bottom_visible')
+  const navbarBottom = document.querySelector('.navbar-bottom')
+  navbarBottom.classList.toggle('navbar-bottom_visible')
+  
+  navbarBottom.classList.contains('navbar-bottom_visible')
+    ? document.body.style.overflow = 'hidden'
+    : document.body.style.overflow = ''
 })
