@@ -169,6 +169,7 @@
       padding-top: 31px
       flex-direction: column
       &__item
+        line-height: 13px
         &_hoverable
           &:after
             display: none
@@ -459,3 +460,25 @@
     &-form
       &__title
         margin-bottom: 15px
+@media (max-width: 767px) and (orientation: landscape)
+  .navbar
+    &-menu
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: space-between
+      &__item
+        margin-bottom: 0 !important
+        text-align: right
+        &:nth-child(1)
+          flex-basis: auto
+        &:nth-child(2)
+          flex-basis: auto
+        &:nth-child(n+3)
+          flex-basis: 40%
+          margin-top: 15px !important
+        &:last-child
+          flex-grow: 1
+@media (min-width: 320px) and (max-width: 479px) and (orientation: landscape)
+  .search
+    &__input
+      width: 200px
