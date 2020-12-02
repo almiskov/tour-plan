@@ -291,6 +291,12 @@
       margin-bottom: 6px
     &__description
       font-size: 11px
+  .footer
+    &-wrapper
+      grid-template-columns: 1fr 1.4fr min-content
+      column-gap: 30px
+    &__form
+      width: 100%
 @media (max-width: 575px)
   .container, .newsletter-wrapper
     max-width: 400px
@@ -340,7 +346,46 @@
       @include small_package__stars
     &__description
       @include small_package__description
-
+  .footer
+    padding-top: 69px
+    padding-bottom: 21px
+    &-wrapper
+      grid-template-columns: 1fr
+      row-gap: 30px
+    &__social
+      grid-row: 2 / 3
+      grid-column: 1 / 2
+    &__legal
+      grid-row: 3 / 4
+      grid-column: 1 / 2
+      justify-self: flex-start
+    &__additional
+      grid-row: 4 / 5
+      grid-column: 1 / 2
+      justify-self: flex-start
+    &__categories
+      grid-row: 5 / 6
+      grid-column: 1 / 2
+    &__contact
+      &-details
+        grid-row: 6 / 7
+        grid-column: 1 / 2
+        margin-top: 10px
+      &-form
+        grid-column: 1 / 2
+        margin-top: 30px
+    &__input
+      flex-basis: 100%
+    &__bottom
+      flex-wrap: wrap
+    &__ul
+      &_bottom
+        flex-basis: 100%
+        justify-content: space-between
+        margin-bottom: 10px
+    &__item
+      &_bottom
+        margin: 0
 @media (min-width: 320px) and (max-width: 479px)
   .container, .newsletter-wrapper
     max-width: 280px
@@ -394,3 +439,23 @@
     &-title
       &__strong
         margin-top: 5px
+  .footer
+    &__social
+      flex-wrap: wrap
+      &-links
+        margin-top: 20px
+    &__logo
+      margin-bottom: 12px
+    &__info
+      flex-basis: 100%
+      margin-bottom: 15px
+    &__button
+      order: 1
+    &__message
+      margin-bottom: 15px
+    &__bottom
+      margin-top: 30px
+  .contact
+    &-form
+      &__title
+        margin-bottom: 15px
