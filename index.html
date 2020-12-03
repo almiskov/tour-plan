@@ -1003,22 +1003,25 @@
           <!-- /.footer__contact-details -->
           <div class="contact-form footer__contact-form">
             <h3 class="footer__title contact-form__title">Send us a message</h3>
-            <form action="#" class="footer__form">
+            <form action="./php/send.php" method="POST" class="footer__form">
               <input
                 type="text"
                 class="input footer__input"
                 placeholder="Your Full Name*"
+                name="name"
               />
               <input
                 type="text"
                 class="input footer__input"
                 placeholder="Phone Number*"
+                name="phone"
               />
               <textarea
                 class="input footer__message"
                 placeholder="Message"
+                name="message"
               ></textarea>
-              <button class="button footer__button">Send</button>
+              <button type="submit" class="button footer__button">Send</button>
               <span class="footer__info">* Required Fields</span>
             </form>
           </div>
