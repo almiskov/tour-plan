@@ -643,12 +643,14 @@
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
 
-        <form action="#" class="subscribe newsletter__subscribe">
+        <form action="./php/send.php" method="POST" class="subscribe newsletter__subscribe">
           <input
             type="text"
             class="subscribe__input"
             placeholder="Your email address"
+            name="email"
           />
+          <input type="hidden" name="form_type" value="newsletter">
           <button class="subscribe__button">Send</button>
         </form>
       </div>
@@ -960,7 +962,7 @@
                 <div class="footer__contact-wrapper">
                   <span
                     >Tel (business hours) :
-                    <a class="footer__contact-link" href="tel:269 1500"
+                    <a class="footer__contact-link" href="tel:2691500"
                       >269 1500</a
                     ></span
                   >
@@ -969,14 +971,14 @@
                     <a class="footer__contact-link" href="tel:52-56-61-38"
                       >52-56-61-38</a
                     >
-                    (08:00 am – 20:00 pm)
+                    (08:00&nbsp;am – 20:00&nbsp;pm)
                   </span>
                   <span>
                     Tel (hotline) Sunday:
                     <a class="footer__contact-link" href="tel:52-56-61-38"
                       >52-56-61-38</a
                     >
-                    (08:00 am – 14:00 pm)
+                    (08:00&nbsp;am – 14:00&nbsp;pm)
                   </span>
                 </div>
                 <!-- /.footer__contact-wrapper -->
@@ -1021,6 +1023,7 @@
                 placeholder="Message"
                 name="message"
               ></textarea>
+              <input type="hidden" name="form_type" value="contact">
               <button type="submit" class="button footer__button">Send</button>
               <span class="footer__info">* Required Fields</span>
             </form>

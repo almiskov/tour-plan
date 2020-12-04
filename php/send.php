@@ -4,19 +4,36 @@ require './phpmailer/PHPMailer.php';
 require './phpmailer/SMTP.php';
 require './phpmailer/Exception.php';
 
-// Переменные, которые отправляет пользователь
-$name = $_POST['name'];
-$phone = $_POST['phone'];
-$message = $_POST['message'];
 
-// Формирование самого письма
-$title = "Новое сообщение Best Tour Plan";
-$body = "
-<h2>Новое письмо</h2>
-<b>Имя:</b> $name<br>
-<b>Номер телефона:</b> $phone<br><br>
-<b>Сообщение:</b><br>$message
-";
+$formType = $_POST['form_type'];
+
+if($formType == 'newsletter') {
+  $email = $_POST['email'];
+
+  $title = "Новое подписка Best Tour Plan";
+  $body = "<h2>Внести пользователя " . $email . " в рассылку</h2>";
+
+  $successMessage = "Вы подписались на рассылку Best Tour Plan!";
+  $errorMessage = "При отправке запроса произошла ошибка";
+}
+elseif ($formType == 'contact') {
+  $name = $_POST['name'];
+  $phone = $_POST['phone'];
+  $message = $_POST['message'];
+
+  $title = "Новое сообщение Best Tour Plan";
+  $body = "
+  <h2>Новое письмо</h2>
+  <b>Имя:</b> $name<br>
+  <b>Номер телефона:</b> $phone<br><br>
+  <b>Сообщение:</b><br>$message
+  ";
+
+  $successMessage = "Сообщение отправлено!";
+  $errorMessage = "Сообщение не отправлено!";
+} else {
+  
+}
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -32,10 +49,10 @@ try {
   // Настройки вашей почты
   $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
   $mail->Username   = 'glo.studying@gmail.com'; // Логин на почте
-  $mail->Password   = 'AcetilHlorid'; // Пароль на почте
+  $mail->Password   = ''; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
-  $mail->setFrom('glo.studying@gmail.com', 'Александр Миськов'); // Адрес самой почты и имя отправителя
+  $mail->setFrom('glo.studying@gmail.com', 'Best Tour Plan'); // Адрес самой почты и имя отправителя
 
   // Получатель письма
   $mail->addAddress('almiskov@gmail.com');
@@ -58,7 +75,7 @@ try {
 
 // Отображение результата
 if ($result == 'success') {
-  echo '<h3>Сообщение отправлено!</h3>';
+  echo '<h3>' . $successMessage . '</h3>';
 } else {
-  echo '<h4>Сообщение не отправлено!</h4><br/>' . 'Причина ошибки : ' . $mail->ErrorInfo;
+  echo '<h4>' . $errorMessage . '</h4><br/>' . 'Причина ошибки : ' . $mail->ErrorInfo;
 }
