@@ -33,6 +33,7 @@
               type="text"
               class="search__input"
               placeholder="Search Location"
+              name="search"
             />
             <button class="search__button">
               <img src="./img/search.svg" alt="Icon: search" />
@@ -255,7 +256,9 @@
                 </a>
               </div>
               <!-- /.booking__call-center -->
-              <button class="button booking__button">View Other Options</button>
+              <button data-toggle="modal" class="button booking__button">
+                View Other Options
+              </button>
             </div>
             <!-- /.booking -->
             <div class="map">
@@ -643,14 +646,18 @@
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
 
-        <form action="./php/send.php" method="POST" class="subscribe newsletter__subscribe">
+        <form
+          action="./php/send.php"
+          method="POST"
+          class="subscribe newsletter__subscribe"
+        >
           <input
             type="text"
             class="subscribe__input"
             placeholder="Your email address"
             name="email"
           />
-          <input type="hidden" name="form_type" value="newsletter">
+          <input type="hidden" name="form_type" value="newsletter" />
           <button class="subscribe__button">Send</button>
         </form>
       </div>
@@ -1019,11 +1026,11 @@
                 name="phone"
               />
               <textarea
-                class="input footer__message"
+                class="message footer__message"
                 placeholder="Message"
                 name="message"
               ></textarea>
-              <input type="hidden" name="form_type" value="contact">
+              <input type="hidden" name="form_type" value="contact" />
               <button type="submit" class="button footer__button">Send</button>
               <span class="footer__info">* Required Fields</span>
             </form>
@@ -1054,8 +1061,49 @@
       <!-- /.container -->
     </footer>
 
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" data-toggle="modal" class="modal__close">
+          <img src="./img/close.svg" alt="Icon: close" />
+        </a>
+        <h3 class="modal__title">Booking</h3>
+        <form action="#" class="modal__form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+            name="name"
+          />
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Phone Number*"
+            name="phone"
+          />
+          <input
+            type="email"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email"
+          />
+          <textarea
+            class="message modal__message"
+            placeholder="Message"
+            name="message"
+          ></textarea>
+          <input type="hidden" name="form_type" value="booking" />
+          <button class="button modal__button">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+
     <script src="./js/swiper-bundle.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="./js/parallax.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
