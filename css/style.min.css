@@ -1563,6 +1563,25 @@ template {
   text-transform: uppercase;
 }
 
+.thanks {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.thanks__message {
+  margin-bottom: 30px;
+}
+
+.thanks__link-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.thanks__back-link {
+  text-decoration: none;
+  color: #333333;
+}
+
 @media (max-width: 1199px) {
   .container {
     max-width: 960px;

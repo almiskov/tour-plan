@@ -7,7 +7,7 @@ require './phpmailer/Exception.php';
 
 $formType = $_POST['form_type'];
 
-if($formType == 'newsletter') {
+if ($formType == 'newsletter') {
   $email = $_POST['email'];
 
   $title = "Новое подписка Best Tour Plan";
@@ -15,8 +15,7 @@ if($formType == 'newsletter') {
 
   $successMessage = "Вы подписались на рассылку Best Tour Plan!";
   $errorMessage = "При отправке запроса произошла ошибка";
-}
-elseif ($formType == 'contact') {
+} elseif ($formType == 'contact') {
   $name = $_POST['name'];
   $phone = $_POST['phone'];
   $message = $_POST['message'];
@@ -32,7 +31,6 @@ elseif ($formType == 'contact') {
   $successMessage = "Сообщение отправлено!";
   $errorMessage = "Сообщение не отправлено!";
 } else {
-  
 }
 
 // Настройки PHPMailer
@@ -75,8 +73,4 @@ try {
 }
 
 // Отображение результата
-if ($result == 'success') {
-  echo '<h3>' . $successMessage . '</h3>';
-} else {
-  echo '<h4>' . $errorMessage . '</h4><br/>' . 'Причина ошибки : ' . $mail->ErrorInfo;
-}
+header("Location: /thanks.php?result=" . $result . "&type=" . $formType);
