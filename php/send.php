@@ -48,7 +48,7 @@ try {
   $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
   $mail->Username   = 'glo.studying@gmail.com'; // Логин на почте
   //TODO: set password before deploying
-  $mail->Password   = ''; // Пароль на почте
+  $mail->Password   = 'FeNH32OH'; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
   $mail->setFrom('glo.studying@gmail.com', 'Best Tour Plan'); // Адрес самой почты и имя отправителя
@@ -73,4 +73,4 @@ try {
 }
 
 // Отображение результата
-header("Location: /thanks.php?result=" . $result . "&type=" . $formType);
+header("Location: /tour-plan/thanks.php?result=" . $result . "&type=" . $formType);
