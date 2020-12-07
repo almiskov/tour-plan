@@ -1,4 +1,4 @@
-<?php include('./php/header.php') ?>
+<?php include('./header.html') ?>
 
 <section class="hotel">
   <div class="container">
@@ -379,8 +379,8 @@
       <span class="newsletter-title__strong">Newsletter</span>
     </h2>
 
-    <form action="./php/send.php" method="POST" class="subscribe newsletter__subscribe">
-      <input type="text" class="subscribe__input" placeholder="Your email address" name="email" />
+    <form action="./php/send.php" method="POST" class="subscribe__form subscribe newsletter__subscribe">
+      <input type="email" class="subscribe__input" placeholder="Your email address" name="email" required />
       <input type="hidden" name="form_type" value="newsletter" />
       <button class="subscribe__button">Send</button>
     </form>
@@ -540,10 +540,16 @@
       <img src="./img/close.svg" alt="Icon: close" />
     </a>
     <h3 class="modal__title">Booking</h3>
-    <form action="#" class="modal__form">
-      <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" />
-      <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone" />
-      <input type="email" class="input modal__input" placeholder="Email*" name="email" />
+    <form action="#" class="form modal__form">
+      <div class="modal__form-group">
+        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2" />
+      </div>
+      <div class="modal__form-group">
+        <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required />
+      </div>
+      <div class="modal__form-group">
+        <input type="email" class="input modal__input" placeholder="Email*" name="email" required />
+      </div>
       <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
       <input type="hidden" name="form_type" value="booking" />
       <button class="button modal__button">Send</button>
@@ -554,4 +560,4 @@
 </div>
 <!-- /.modal -->
 
-<?php include('./php/footer.php') ?>
+<?php include('./footer.html') ?>

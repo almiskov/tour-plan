@@ -66,6 +66,10 @@ img {
   color: #ffffff;
 }
 
+label.error {
+  color: #ff3333;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1525,13 +1529,17 @@ template {
   flex-wrap: wrap;
 }
 
-.modal__input {
+.modal__form-group {
   flex-basis: 100%;
   margin-bottom: 15px;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
+}
+
+.modal__input {
+  width: 100%;
 }
 
 .modal__message {

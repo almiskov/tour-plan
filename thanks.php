@@ -20,14 +20,12 @@ if ($result == 'success') {
 
 ?>
 
-<?php include('./php/header.php') ?>
+<?php include('./header.html') ?>
 
 <section class="thanks">
   <div class="container">
     <div class="thanks__message">
-      <?php
-      echo $message;
-      ?>
+      <?php echo $message; ?>
     </div>
 
     <div class="thanks__link-container">
@@ -37,4 +35,4 @@ if ($result == 'success') {
   <!-- /.container -->
 </section>
 
-<?php include('./php/footer.php') ?>
+<?php include('./footer.html') ?>

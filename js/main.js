@@ -49,6 +49,68 @@ $(document).ready(function() {
     if(e.key == 'Escape' && modal.hasClass('modal_visible')){
       modal.removeClass('modal_visible');
     }
-});
+  });
+
+  // валидация форм
+  $('.form').each(function() {
+    $(this).validate({
+      debug: true,
+      rules: {
+        name: {
+          required: true
+        },
+        email: {
+          required: true,
+          email: true
+        },
+        phone: {
+          required: true,
+          tel: true
+        }
+      },
+      messages: {
+        name: {
+          required: "Please, enter your name",
+          minlength: "Name should contain at least 2 characters"
+        },
+        email: {
+          required: "Please, enter your email",
+        },
+        phone: {
+          required: "Please, enter your phone",
+        },
+      },
+    })
+  })
+
+  $('.subscribe__form').each(function() {
+    $(this).validate({
+      errorPlacement: function(error, element) {
+        // TODO выровнять нормально
+        error.insertAfter(element.parent('form'));
+      },
+      debug: true,
+      rules: {
+        search: {
+          required: true
+        },
+        email: {
+          required: true,
+          email: true
+        },
+      },
+      messages: {
+        search: {
+          required: "Please, enter your name",
+          minlength: "Name should contain at least 2 characters"
+        },
+        email: {
+          required: "Please, enter your email",
+        },
+      },
+    })
+  })
+
+  $('input[type=tel]').mask('+7 (000) 000-00-00');
 
 })
