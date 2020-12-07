@@ -7,15 +7,15 @@ $message = '';
 if ($result == 'success') {
   switch ($type) {
     case 'newsletter':
-      $message = '<span class="thanks__newsletter">Вы подписались на рассылку</span>';
+      $message = '<span class="thanks__newsletter">You\'ve subscribed to our newsletters</span>';
       break;
     case 'contact':
-      $message = '<h3 class="thanks__contact-title">Спасибо за обращение!</h3>'
-        . '<span class="thanks__contact-text">Наш менеджер свяжется с Вами в ближайшее время.</span>';
+      $message = '<h3 class="thanks__contact-title">Thank you!</h3>'
+        . '<span class="thanks__contact-text">Our manager will contact you soon</span>';
       break;
   }
 } else {
-  $message = '<span class="thanks__error-message">При отправке запроса произошла ошибка. Поробуйте ещё раз.</span>';
+  $message = '<span class="thanks__error-message">An error occurred while sending request. Please try again later</span>';
 }
 
 ?>
@@ -31,7 +31,7 @@ if ($result == 'success') {
     </div>
 
     <div class="thanks__link-container">
-      <a class="thanks__back-link" href="javascript:history.back()">Вернуться</a>
+      <a class="thanks__back-link" href="javascript:history.back()">Go back</a>
     </div>
   </div>
   <!-- /.container -->
