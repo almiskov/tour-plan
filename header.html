@@ -25,10 +25,11 @@
               class="logo__img"
             />
           </a>
-          <form
-            action="#"
-            class="form search navbar__search navbar__search_mobile_hidden"
-          >
+          <div class="navbar__search-wrapper navbar__search-wrapper_mobile_hidden">
+            <form
+              action="#"
+              class="search navbar__search"
+            >
             <input
               type="text"
               class="search__input"
@@ -39,6 +40,8 @@
               <img src="./img/search.svg" alt="Icon: search" />
             </button>
           </form>
+          <span id="search-form-error"></span>
+          </div>
 
           <a href="#" class="user navbar__user navbar__user_mobile_hidden">
             <img
@@ -74,19 +77,23 @@
               </a>
             </li>
             <li class="navbar-menu__item navbar-menu__item_mobile_visible">
-              <form
-                action="#"
-                class="search navbar__search navbar__search_mobile_visible"
-              >
+              <div class="navbar__search-wrapper navbar__search-wrapper_mobile_visible">
+                <form
+                    action="#"
+                    class="search navbar__search navbar-menu__search"
+                  >
                 <input
                   type="text"
                   class="search__input"
                   placeholder="Search Location"
+                  name="search"
                 />
-                <button class="search__button">
+                <button type="submit" class="search__button" name="search">
                   <img src="./img/search.svg" alt="Icon: search" />
                 </button>
               </form>
+              <span id="menu-search-form-error"></span>
+              </div>
             </li>
             <li class="navbar-menu__item navbar-menu__item_hoverable">
               <a href="#" class="navbar-menu__link">All Deals</a>
@@ -131,5 +138,4 @@
       <!-- /.container -->
     </nav>
     <!-- /.breadcrumb -->
-  </body>
-</html>
+

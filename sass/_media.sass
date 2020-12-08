@@ -14,7 +14,8 @@
       font-size: 13px
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
     &__bottom
       width: 590px
 @media (max-width: 991px)
@@ -31,7 +32,8 @@
       padding-top: 30px
       padding-bottom: 30px
     &__search
-      margin-left: auto
+      &-wrapper
+        margin-left: auto
     &-menu
       padding-top: 22px
       padding-bottom: 22px
@@ -125,7 +127,8 @@
     &__form
       width: 539px
     &__input
-      flex-basis: auto
+      &-group
+        flex-basis: auto
     &__bottom
       width: 100%
       margin-top: 56px
@@ -146,12 +149,13 @@
       flex-direction: column
       justify-content: space-between
       align-items: center
-    &__search, &__user
+    &__search-wrapper, &__user
       &_mobile
         &_hidden
           display: none
         &_visible
           display: flex
+          flex-direction: column
     &_mobile
       &_fixed
         position: fixed
@@ -314,6 +318,8 @@
     &__dialog
       padding: 33px 50px
       width: 370px
+  #menu-search-form-error
+    margin-top: 2px
 @media (max-width: 575px)
   .container, .newsletter-wrapper
     max-width: 400px
@@ -363,6 +369,10 @@
       @include small_package__stars
     &__description
       @include small_package__description
+  .newsletter
+    &__form
+      &-wrapper
+        width: 100%
   .footer
     padding-top: 69px
     padding-bottom: 21px
@@ -393,7 +403,8 @@
         grid-column: 1 / 2
         margin-top: 30px
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
     &__bottom
       flex-wrap: wrap
     &__ul

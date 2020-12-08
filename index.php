@@ -379,11 +379,14 @@
       <span class="newsletter-title__strong">Newsletter</span>
     </h2>
 
-    <form action="./php/send.php" method="POST" class="subscribe__form subscribe newsletter__subscribe">
-      <input type="email" class="subscribe__input" placeholder="Your email address" name="email" required />
-      <input type="hidden" name="form_type" value="newsletter" />
-      <button class="subscribe__button">Send</button>
-    </form>
+    <div class="newsletter__form-wrapper">
+      <form action="./php/send.php" method="POST" class="subscribe__form subscribe newsletter__subscribe">
+        <input type="email" class="subscribe__input" placeholder="Your email address" name="email" required />
+        <input type="hidden" name="form_type" value="newsletter" />
+        <button type="submit" class="subscribe__button">Send</button>
+      </form>
+      <span id="subscribe-error"></span>
+    </div>
   </div>
   <!-- /.newsletter-wrapper -->
 </section>

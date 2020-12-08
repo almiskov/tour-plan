@@ -52,9 +52,53 @@ $(document).ready(function() {
   });
 
   // валидация форм
+
+  $.validator.addMethod('phone', function(value, element, params) {
+    const regexp = params.regexp;
+    if (!regexp)
+      throw Error("Should specify phone regular expression")
+
+    const reg = new RegExp(regexp)
+    console.log(value, reg.test( value ))
+
+    return this.optional(element) || reg.test( value );
+  }, "Please, enter your number")
+
+
+  $('input[type=tel]').mask('+7 (000) 000-00-00');
+
+  $('.navbar__search').validate({
+      errorLabelContainer: "#search-form-error",
+      rules: {
+        search: {
+          required: true
+        },
+      },
+      messages: {
+        search: {
+          required: "Please, enter location",
+          minlength: "Name should contain at least 2 characters"
+        }
+      },
+    })
+
+  $('.navbar-menu__search').validate({
+      errorLabelContainer: "#menu-search-form-error",
+      rules: {
+        search: {
+          required: true
+        },
+      },
+      messages: {
+        search: {
+          required: "Please, enter location",
+          minlength: "Name should contain at least 2 characters"
+        }
+      },
+    })
+
   $('.form').each(function() {
     $(this).validate({
-      debug: true,
       rules: {
         name: {
           required: true
@@ -65,52 +109,38 @@ $(document).ready(function() {
         },
         phone: {
           required: true,
-          tel: true
+          phone: {
+            regexp: /^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$/
+          }
         }
       },
       messages: {
         name: {
           required: "Please, enter your name",
-          minlength: "Name should contain at least 2 characters"
+          minlength: "Name must contain at least 2 characters"
         },
         email: {
           required: "Please, enter your email",
         },
         phone: {
-          required: "Please, enter your phone",
+          required: "Please, enter your number",
         },
       },
     })
   })
 
-  $('.subscribe__form').each(function() {
-    $(this).validate({
-      errorPlacement: function(error, element) {
-        // TODO выровнять нормально
-        error.insertAfter(element.parent('form'));
+  $('.subscribe__form').validate({
+    errorLabelContainer: "#subscribe-error",
+    rules: {
+      email: {
+        required: true,
+        email: true
       },
-      debug: true,
-      rules: {
-        search: {
-          required: true
-        },
-        email: {
-          required: true,
-          email: true
-        },
+    },
+    messages: {
+      email: {
+        required: "Please, enter your email",
       },
-      messages: {
-        search: {
-          required: "Please, enter your name",
-          minlength: "Name should contain at least 2 characters"
-        },
-        email: {
-          required: "Please, enter your email",
-        },
-      },
-    })
+    },
   })
-
-  $('input[type=tel]').mask('+7 (000) 000-00-00');
-
 })

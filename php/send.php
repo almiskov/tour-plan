@@ -47,7 +47,7 @@ try {
   // Настройки вашей почты
   $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
   $mail->Username   = 'glo.studying@gmail.com'; // Логин на почте
-  //TODO: set password before deploying
+  //TODO: set password after deploying
   $mail->Password   = ''; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;

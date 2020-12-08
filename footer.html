@@ -140,8 +140,12 @@
       <div class="contact-form footer__contact-form">
         <h3 class="footer__title contact-form__title">Send us a message</h3>
         <form action="./php/send.php" method="POST" class="form footer__form">
-          <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required minlength="2" />
-          <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone" required />
+          <div class="footer__input-group">
+            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required minlength="2" />
+          </div>
+          <div class="footer__input-group">
+            <input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone" required />
+          </div>
           <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
           <input type="hidden" name="form_type" value="contact" />
           <button type="submit" class="button footer__button">Send</button>
