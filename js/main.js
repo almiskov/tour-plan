@@ -59,7 +59,6 @@ $(document).ready(function() {
       throw Error("Should specify phone regular expression")
 
     const reg = new RegExp(regexp)
-    console.log(value, reg.test( value ))
 
     return this.optional(element) || reg.test( value );
   }, "Please, enter your number")
