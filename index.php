@@ -109,7 +109,7 @@
   <div class="container">
     <h2 class="packages__title">Other Packages</h2>
     <div class="packages__grid">
-      <div class="package">
+      <div class="package" data-aos="zoom-in">
         <div class="package__view">
           <img src="./img/packages/package-1.jpg" alt="Image: package" class="package__image" />
         </div>
@@ -162,7 +162,7 @@
         <span class="package__offer">Flash Offer</span>
       </div>
       <!-- /.package -->
-      <div class="package">
+      <div class="package" data-aos="zoom-in">
         <div class="package__view package__view_small">
           <img src="./img/packages/package-2.jpg" alt="Image: package" class="package__image" />
         </div>
@@ -213,7 +213,7 @@
         <span class="package__offer package__offer_small">Flash Offer</span>
       </div>
       <!-- /.package -->
-      <div class="package">
+      <div class="package" data-aos="zoom-in">
         <div class="package__view package__view_small">
           <img src="./img/packages/package-3.jpg" alt="Image: package" class="package__image" />
         </div>
@@ -264,7 +264,7 @@
         <span class="package__offer package__offer_small">Flash Offer</span>
       </div>
       <!-- /.package -->
-      <div class="package">
+      <div class="package" data-aos="zoom-in">
         <div class="package__view package__view_small">
           <img src="./img/packages/package-4.jpg" alt="Image: package" class="package__image" />
         </div>
@@ -315,7 +315,7 @@
         <span class="package__offer package__offer_small">Flash Offer</span>
       </div>
       <!-- /.package -->
-      <div class="package">
+      <div class="package" data-aos="zoom-in">
         <div class="package__view package__view_small">
           <img src="./img/packages/package-5.jpg" alt="Image: package" class="package__image" />
         </div>
@@ -394,7 +394,7 @@
 <section class="reviews">
   <div class="container">
     <h2 class="reviews__title">What people think about us</h2>
-    <div class="swiper-container reviews-slider">
+    <div class="swiper-container reviews-slider" data-aos="fade">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="reviews-slider__item">
@@ -503,19 +503,19 @@
   <div class="container">
     <h2 class="activities__title">Other Activities</h2>
     <div class="activities-wrapper">
-      <div class="card activities__card">
+      <div class="card activities__card" data-aos="fade-up">
         <img src="./img/activities/activity-1.jpg" alt="Activity" class="card__image" />
         <h3 class="card__title">The curious corner<br />of chamarel</h3>
         <button class="card__button">Book Now</button>
       </div>
       <!-- /.card -->
-      <div class="card activities__card">
+      <div class="card activities__card" data-aos="fade-up">
         <img src="./img/activities/activity-2.jpg" alt="Activity" class="card__image" />
         <h3 class="card__title">Gymkhana club golf<br />course</h3>
         <button class="card__button">Book Now</button>
       </div>
       <!-- /.card -->
-      <div class="card activities__card">
+      <div class="card activities__card" data-aos="fade-up">
         <img src="./img/activities/activity-3.jpg" alt="Activity" class="card__image" />
         <h3 class="card__title">
           Tamarind falls hiking<br />trip - full day
@@ -523,7 +523,7 @@
         <button class="card__button">Book Now</button>
       </div>
       <!-- /.card -->
-      <div class="card activities__card">
+      <div class="card activities__card" data-aos="fade-up">
         <img src="./img/activities/activity-4.jpg" alt="Activity" class="card__image" />
         <h3 class="card__title">The blue marine discovery<br />quest</h3>
         <button class="card__button">Book Now</button>

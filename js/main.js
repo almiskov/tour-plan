@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  AOS.init();
+
   var hotelSlider = new Swiper('.hotel-slider', {
   // Optional parameters
   loop: true,
