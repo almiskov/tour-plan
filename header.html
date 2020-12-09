@@ -20,11 +20,9 @@
       <div class="container">
         <div class="navbar-top">
           <a href="/tour-plan/" class="logo">
-            <img
-              src="./img/horizontal-logo.svg"
-              alt="Logo: Best tour plan"
-              class="logo__img"
-            />
+            <svg class="logo__img">
+              <use xlink:href="./img/svg/sprite.svg#horizontal-logo"></use>
+            </svg>
           </a>
           <div class="navbar__search-wrapper navbar__search-wrapper_mobile_hidden">
             <form
@@ -38,7 +36,9 @@
               name="search"
             />
             <button class="search__button">
-              <img src="./img/search.svg" alt="Icon: search" />
+              <svg class="search__icon">
+                <use xlink:href="./img/svg/sprite.svg#search"></use>
+              </svg>
             </button>
           </form>
           <span id="search-form-error"></span>
@@ -90,7 +90,9 @@
                   name="search"
                 />
                 <button type="submit" class="search__button" name="search">
-                  <img src="./img/search.svg" alt="Icon: search" />
+                  <svg class="search__icon">
+                    <use xlink:href="./img/svg/sprite.svg#search"></use>
+                  </svg>
                 </button>
               </form>
               <span id="menu-search-form-error"></span>

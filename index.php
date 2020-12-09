@@ -6,11 +6,21 @@
       <div class="hotel-info__text">
         <div class="hotel-wrapper">
           <div class="stars hotel__stars">
-            <img class="star" src="./img/star.svg" alt="star" />
-            <img class="star" src="./img/star.svg" alt="star" />
-            <img class="star" src="./img/star.svg" alt="star" />
-            <img class="star" src="./img/star.svg" alt="star" />
-            <img class="star" src="./img/star.svg" alt="star" />
+            <svg class="star">
+              <use xlink:href="./img/svg/sprite.svg#star"></use>
+            </svg>
+            <svg class="star">
+              <use xlink:href="./img/svg/sprite.svg#star"></use>
+            </svg>
+            <svg class="star">
+              <use xlink:href="./img/svg/sprite.svg#star"></use>
+            </svg>
+            <svg class="star">
+              <use xlink:href="./img/svg/sprite.svg#star"></use>
+            </svg>
+            <svg class="star">
+              <use xlink:href="./img/svg/sprite.svg#star"></use>
+            </svg>
           </div>
           <h1 class="hotel-name hotel-info__name">GRAND HILTON HOTEL</h1>
           <span class="offer hotel-info__offer">Flash Offer</span>
@@ -70,11 +80,15 @@
             <!-- /.booking-price -->
             <div class="booking__room">
               <div class="booking__text">
-                <img src="./img/user.svg" alt="Icon: user" class="booking__icon" />
+                <svg class="booking__icon">
+                  <use xlink:href="./img/svg/sprite.svg#user"></use>
+                </svg>
                 <span class="booking__description">2 x Guests</span>
               </div>
               <div class="booking__text">
-                <img src="./img/home.svg" alt="Icon: home" class="booking__icon" />
+                <svg class="booking__icon">
+                  <use xlink:href="./img/svg/sprite.svg#home"></use>
+                </svg>
                 <span class="booking__description">1 x Room</span>
               </div>
             </div>
@@ -84,7 +98,9 @@
           <div class="booking__call-center">
             <span class="booking__heading">Quick Booking</span>
             <a class="booking__number" href="tel:12100">
-              <img src="./img/phone-call.svg" alt="Icon: phone" />
+              <svg class="booking__icon">
+                  <use xlink:href="./img/svg/sprite.svg#phone-call"></use>
+                </svg>
               <span class="booking__num">12100</span>
             </a>
           </div>
@@ -116,11 +132,21 @@
         <div class="package__info">
           <div class="package__top">
             <div class="stars package__stars">
-              <img class="star" src="./img/star.svg" alt="star" />
-              <img class="star" src="./img/star.svg" alt="star" />
-              <img class="star" src="./img/star.svg" alt="star" />
-              <img class="star" src="./img/star.svg" alt="star" />
-              <img class="star" src="./img/star.svg" alt="star" />
+              <svg class="star">
+                <use xlink:href="./img/svg/sprite.svg#star"></use>
+              </svg>
+              <svg class="star">
+                <use xlink:href="./img/svg/sprite.svg#star"></use>
+              </svg>
+              <svg class="star">
+                <use xlink:href="./img/svg/sprite.svg#star"></use>
+              </svg>
+              <svg class="star">
+                <use xlink:href="./img/svg/sprite.svg#star"></use>
+              </svg>
+              <svg class="star">
+                <use xlink:href="./img/svg/sprite.svg#star"></use>
+              </svg>
             </div>
             <!-- /.stars package__stars -->
             <h3 class="package__title">Hotel Blue Haven</h3>
@@ -136,15 +162,21 @@
           <div class="package__bottom">
             <div class="package__properties">
               <div class="property">
-                <img src="./img/map-pin.svg" alt="Icon: map-pin" class="property__icon" />
+                <svg class="property__icon">
+                  <use xlink:href="./img/svg/sprite.svg#map-pin"></use>
+                </svg>
                 <span class="property__description">1749 Wheeler Ridge Delaware</span>
               </div>
               <div class="property">
-                <img src="./img/user.svg" alt="Icon: user" class="property__icon" />
+                <svg class="property__icon">
+                  <use xlink:href="./img/svg/sprite.svg#user"></use>
+                </svg>
                 <span class="property__description">2 x Guests</span>
               </div>
               <div class="property">
-                <img src="./img/home.svg" alt="Icon: home" class="property__icon" />
+                <svg class="property__icon">
+                  <use xlink:href="./img/svg/sprite.svg#home"></use>
+                </svg>
                 <span class="property__description">1 x Room</span>
               </div>
             </div>
@@ -169,11 +201,21 @@
         <div class="package__info package__info_small">
           <div class="package__top">
             <div class="stars package__stars package__stars_small">
-              <img class="star" src="./img/star.svg" alt="star" />
-              <img class="star" src="./img/star.svg" alt="star" />
-              <img class="star" src="./img/star.svg" alt="star" />
-              <img class="star" src="./img/star.svg" alt="star" />
-              <img class="star" src="./img/star.svg" alt="star" />
+            <svg class="star">
+                <use xlink:href="./img/svg/sprite.svg#star"></use>
+              </svg>
+              <svg class="star">
+                <use xlink:href="./img/svg/sprite.svg#star"></use>
+              </svg>
+              <svg class="star">
+                <use xlink:href="./img/svg/sprite.svg#star"></use>
+              </svg>
+              <svg class="star">
+                <use xlink:href="./img/svg/sprite.svg#star"></use>
+              </svg>
+              <svg class="star">
+                <use xlink:href="./img/svg/sprite.svg#star"></use>
+              </svg>
             </div>
             <!-- /.stars package__stars -->
             <h3 class="package__title package__title_small">
@@ -187,15 +229,21 @@
           <div class="package__bottom">
             <div class="package__properties package__properties_small">
               <div class="property">
-                <img src="./img/map-pin.svg" alt="Icon: map-pin" class="property__icon" />
+                <svg class="property__icon">
+                  <use xlink:href="./img/svg/sprite.svg#map-pin"></use>
+                </svg>
                 <span class="property__description">1749 Wheeler Ridge Delaware</span>
               </div>
               <div class="property">
-                <img src="./img/user.svg" alt="Icon: user" class="property__icon" />
+                <svg class="property__icon">
+                  <use xlink:href="./img/svg/sprite.svg#user"></use>
+                </svg>
                 <span class="property__description">2 x Guests</span>
               </div>
               <div class="property">
-                <img src="./img/home.svg" alt="Icon: home" class="property__icon" />
+                <svg class="property__icon">
+                  <use xlink:href="./img/svg/sprite.svg#home"></use>
+                </svg>
                 <span class="property__description">1 x Room</span>
               </div>
             </div>
@@ -220,11 +268,21 @@
         <div class="package__info package__info_small">
           <div class="package__top">
             <div class="stars package__stars package__stars_small">
-              <img class="star" src="./img/star.svg" alt="star" />
-              <img class="star" src="./img/star.svg" alt="star" />
-              <img class="star" src="./img/star.svg" alt="star" />
-              <img class="star" src="./img/star.svg" alt="star" />
-              <img class="star" src="./img/star.svg" alt="star" />
+              <svg class="star">
+                <use xlink:href="./img/svg/sprite.svg#star"></use>
+              </svg>
+              <svg class="star">
+                <use xlink:href="./img/svg/sprite.svg#star"></use>
+              </svg>
+              <svg class="star">
+                <use xlink:href="./img/svg/sprite.svg#star"></use>
+              </svg>
+              <svg class="star">
+                <use xlink:href="./img/svg/sprite.svg#star"></use>
+              </svg>
+              <svg class="star">
+                <use xlink:href="./img/svg/sprite.svg#star"></use>
+              </svg>
             </div>
             <!-- /.stars package__stars -->
             <h3 class="package__title package__title_small">
@@ -238,15 +296,21 @@
           <div class="package__bottom">
             <div class="package__properties package__properties_small">
               <div class="property">
-                <img src="./img/map-pin.svg" alt="Icon: map-pin" class="property__icon" />
+                <svg class="property__icon">
+                  <use xlink:href="./img/svg/sprite.svg#map-pin"></use>
+                </svg>
                 <span class="property__description">1749 Wheeler Ridge Delaware</span>
               </div>
               <div class="property">
-                <img src="./img/user.svg" alt="Icon: user" class="property__icon" />
+                <svg class="property__icon">
+                  <use xlink:href="./img/svg/sprite.svg#user"></use>
+                </svg>
                 <span class="property__description">2 x Guests</span>
               </div>
               <div class="property">
-                <img src="./img/home.svg" alt="Icon: home" class="property__icon" />
+                <svg class="property__icon">
+                  <use xlink:href="./img/svg/sprite.svg#home"></use>
+                </svg>
                 <span class="property__description">1 x Room</span>
               </div>
             </div>
@@ -271,11 +335,21 @@
         <div class="package__info package__info_small">
           <div class="package__top">
             <div class="stars package__stars package__stars_small">
-              <img class="star" src="./img/star.svg" alt="star" />
-              <img class="star" src="./img/star.svg" alt="star" />
-              <img class="star" src="./img/star.svg" alt="star" />
-              <img class="star" src="./img/star.svg" alt="star" />
-              <img class="star" src="./img/star.svg" alt="star" />
+              <svg class="star">
+                <use xlink:href="./img/svg/sprite.svg#star"></use>
+              </svg>
+              <svg class="star">
+                <use xlink:href="./img/svg/sprite.svg#star"></use>
+              </svg>
+              <svg class="star">
+                <use xlink:href="./img/svg/sprite.svg#star"></use>
+              </svg>
+              <svg class="star">
+                <use xlink:href="./img/svg/sprite.svg#star"></use>
+              </svg>
+              <svg class="star">
+                <use xlink:href="./img/svg/sprite.svg#star"></use>
+              </svg>
             </div>
             <!-- /.stars package__stars -->
             <h3 class="package__title package__title_small">
@@ -289,15 +363,21 @@
           <div class="package__bottom">
             <div class="package__properties package__properties_small">
               <div class="property">
-                <img src="./img/map-pin.svg" alt="Icon: map-pin" class="property__icon" />
+                <svg class="property__icon">
+                  <use xlink:href="./img/svg/sprite.svg#map-pin"></use>
+                </svg>
                 <span class="property__description">1749 Wheeler Ridge Delaware</span>
               </div>
               <div class="property">
-                <img src="./img/user.svg" alt="Icon: user" class="property__icon" />
+                <svg class="property__icon">
+                  <use xlink:href="./img/svg/sprite.svg#user"></use>
+                </svg>
                 <span class="property__description">2 x Guests</span>
               </div>
               <div class="property">
-                <img src="./img/home.svg" alt="Icon: home" class="property__icon" />
+                <svg class="property__icon">
+                  <use xlink:href="./img/svg/sprite.svg#home"></use>
+                </svg>
                 <span class="property__description">1 x Room</span>
               </div>
             </div>
@@ -322,11 +402,21 @@
         <div class="package__info package__info_small">
           <div class="package__top">
             <div class="stars package__stars package__stars_small">
-              <img class="star" src="./img/star.svg" alt="star" />
-              <img class="star" src="./img/star.svg" alt="star" />
-              <img class="star" src="./img/star.svg" alt="star" />
-              <img class="star" src="./img/star.svg" alt="star" />
-              <img class="star" src="./img/star.svg" alt="star" />
+            <svg class="star">
+                <use xlink:href="./img/svg/sprite.svg#star"></use>
+              </svg>
+              <svg class="star">
+                <use xlink:href="./img/svg/sprite.svg#star"></use>
+              </svg>
+              <svg class="star">
+                <use xlink:href="./img/svg/sprite.svg#star"></use>
+              </svg>
+              <svg class="star">
+                <use xlink:href="./img/svg/sprite.svg#star"></use>
+              </svg>
+              <svg class="star">
+                <use xlink:href="./img/svg/sprite.svg#star"></use>
+              </svg>
             </div>
             <!-- /.stars package__stars -->
             <h3 class="package__title package__title_small">
@@ -340,15 +430,21 @@
           <div class="package__bottom">
             <div class="package__properties package__properties_small">
               <div class="property">
-                <img src="./img/map-pin.svg" alt="Icon: map-pin" class="property__icon" />
+                <svg class="property__icon">
+                  <use xlink:href="./img/svg/sprite.svg#map-pin"></use>
+                </svg>
                 <span class="property__description">1749 Wheeler Ridge Delaware</span>
               </div>
               <div class="property">
-                <img src="./img/user.svg" alt="Icon: user" class="property__icon" />
+                <svg class="property__icon">
+                  <use xlink:href="./img/svg/sprite.svg#user"></use>
+                </svg>
                 <span class="property__description">2 x Guests</span>
               </div>
               <div class="property">
-                <img src="./img/home.svg" alt="Icon: home" class="property__icon" />
+                <svg class="property__icon">
+                  <use xlink:href="./img/svg/sprite.svg#home"></use>
+                </svg>
                 <span class="property__description">1 x Room</span>
               </div>
             </div>
@@ -403,11 +499,21 @@
               <h3 class="reviews-slider__username">Megan Fox</h3>
               <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
               <div class="reviews-slider__rating">
-                <img class="star" src="./img/star.svg" alt="star" />
-                <img class="star" src="./img/star.svg" alt="star" />
-                <img class="star" src="./img/star.svg" alt="star" />
-                <img class="star" src="./img/star.svg" alt="star" />
-                <img class="star" src="./img/star.svg" alt="star" />
+                <svg class="star">
+                  <use xlink:href="./img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star">
+                  <use xlink:href="./img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star">
+                  <use xlink:href="./img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star">
+                  <use xlink:href="./img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star">
+                  <use xlink:href="./img/svg/sprite.svg#star"></use>
+                </svg>
               </div>
               <!-- /.reviews-slider__rating -->
             </div>
@@ -434,11 +540,21 @@
               <h3 class="reviews-slider__username">John Doe</h3>
               <span class="reviews-slider__date">Stayed 19 Jan, 1879</span>
               <div class="reviews-slider__rating">
-                <img class="star" src="./img/star.svg" alt="star" />
-                <img class="star" src="./img/star.svg" alt="star" />
-                <img class="star" src="./img/star.svg" alt="star" />
-                <img class="star" src="./img/star.svg" alt="star" />
-                <img class="star" src="./img/star.svg" alt="star" />
+                <svg class="star">
+                  <use xlink:href="./img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star">
+                  <use xlink:href="./img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star">
+                  <use xlink:href="./img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star">
+                  <use xlink:href="./img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star">
+                  <use xlink:href="./img/svg/sprite.svg#star"></use>
+                </svg>
               </div>
               <!-- /.reviews-slider__rating -->
             </div>
@@ -460,11 +576,21 @@
               <h3 class="reviews-slider__username">Jane Doe</h3>
               <span class="reviews-slider__date">Stayed 01 Apr, 2017</span>
               <div class="reviews-slider__rating">
-                <img class="star" src="./img/star.svg" alt="star" />
-                <img class="star" src="./img/star.svg" alt="star" />
-                <img class="star" src="./img/star.svg" alt="star" />
-                <img class="star" src="./img/star.svg" alt="star" />
-                <img class="star" src="./img/star.svg" alt="star" />
+                <svg class="star">
+                  <use xlink:href="./img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star">
+                  <use xlink:href="./img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star">
+                  <use xlink:href="./img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star">
+                  <use xlink:href="./img/svg/sprite.svg#star"></use>
+                </svg>
+                <svg class="star">
+                  <use xlink:href="./img/svg/sprite.svg#star"></use>
+                </svg>
               </div>
               <!-- /.reviews-slider__rating -->
             </div>
@@ -540,7 +666,9 @@
   <!-- /.modal__overlay -->
   <div class="modal__dialog">
     <a href="#" data-toggle="modal" class="modal__close">
-      <img src="./img/close.svg" alt="Icon: close" />
+      <svg class="modal__close-icon">
+        <use xlink:href="./img/svg/sprite.svg#close"></use>
+      </svg>
     </a>
     <h3 class="modal__title">Booking</h3>
     <form action="#" class="form modal__form">
