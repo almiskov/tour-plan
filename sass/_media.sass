@@ -77,6 +77,7 @@
   .newsletter
     padding: 92px 0 93px 0
   .activities
+    padding-bottom: 70px
     &-wrapper
       flex-wrap: wrap
     &__card
@@ -135,6 +136,10 @@
     &__title
       &_inline
         margin-right: 41px
+  .contact
+    &-details
+      &__title
+        margin-bottom: 20px
 @media (max-width: 767px)
   .container
     max-width: 530px
@@ -310,10 +315,6 @@
     &__contact
       &-form
         margin-top: 0
-  .contact
-    &-details
-      &__title
-        margin-bottom: 20px
   .modal
     &__dialog
       padding: 33px 50px
@@ -415,6 +416,10 @@
     &__item
       &_bottom
         margin: 0
+  .contact
+    &-details
+      &__item
+        margin-left: 4px
 @media (min-width: 320px) and (max-width: 479px)
   .container, .newsletter-wrapper
     max-width: 280px
@@ -497,6 +502,26 @@
       margin-bottom: 15px
     &__button
       order: 1
+@media (max-width: 991px) and (orientation: landscape)
+  .modal
+      &__dialog
+        width: 80vw
+        padding: 20px 30px
+      &__input
+        height: 45px
+      &__button
+        padding-top: 16px
+        padding-bottom: 16px
+      &__form
+        &-group
+          margin-bottom: 10px
+          &:nth-child(-n+2)
+            flex-basis: 49%
+      &__message
+        height: 6em
+        margin-bottom: 10px
+
+            
 @media (max-width: 767px) and (orientation: landscape)
   .navbar
     &-menu
