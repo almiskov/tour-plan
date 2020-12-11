@@ -186,7 +186,7 @@
               <span class="package__pricetag-new">$ 8,500</span>
             </div>
             <!-- /.package__prices -->
-            <button class="package__button">Book Now</button>
+            <button class="package__button" data-toggle="modal">Book Now</button>
           </div>
           <!-- /.package__bottom -->
         </div>
@@ -253,7 +253,7 @@
               <span class="package__pricetag-new">$ 3,000</span>
             </div>
             <!-- /.package__prices -->
-            <button class="package__button">Book Now</button>
+            <button class="package__button" data-toggle="modal">Book Now</button>
           </div>
           <!-- /.package__bottom -->
         </div>
@@ -320,7 +320,7 @@
               <span class="package__pricetag-new">$ 9,500</span>
             </div>
             <!-- /.package__prices -->
-            <button class="package__button">Book Now</button>
+            <button class="package__button" data-toggle="modal">Book Now</button>
           </div>
           <!-- /.package__bottom -->
         </div>
@@ -387,7 +387,7 @@
               <span class="package__pricetag-new">$ 2,500</span>
             </div>
             <!-- /.package__prices -->
-            <button class="package__button">Book Now</button>
+            <button class="package__button" data-toggle="modal">Book Now</button>
           </div>
           <!-- /.package__bottom -->
         </div>
@@ -454,7 +454,7 @@
               <span class="package__pricetag-new">$ 3,500</span>
             </div>
             <!-- /.package__prices -->
-            <button class="package__button">Book Now</button>
+            <button class="package__button" data-toggle="modal">Book Now</button>
           </div>
           <!-- /.package__bottom -->
         </div>
@@ -632,13 +632,13 @@
       <div class="card activities__card" data-aos="fade-up">
         <img src="./img/activities/activity-1.jpg" alt="Activity" class="card__image" />
         <h3 class="card__title">The curious corner<br />of chamarel</h3>
-        <button class="card__button">Book Now</button>
+        <button class="card__button" data-toggle="modal">Book Now</button>
       </div>
       <!-- /.card -->
       <div class="card activities__card" data-aos="fade-up">
         <img src="./img/activities/activity-2.jpg" alt="Activity" class="card__image" />
         <h3 class="card__title">Gymkhana club golf<br />course</h3>
-        <button class="card__button">Book Now</button>
+        <button class="card__button" data-toggle="modal">Book Now</button>
       </div>
       <!-- /.card -->
       <div class="card activities__card" data-aos="fade-up">
@@ -646,13 +646,13 @@
         <h3 class="card__title">
           Tamarind falls hiking<br />trip - full day
         </h3>
-        <button class="card__button">Book Now</button>
+        <button class="card__button" data-toggle="modal">Book Now</button>
       </div>
       <!-- /.card -->
       <div class="card activities__card" data-aos="fade-up">
         <img src="./img/activities/activity-4.jpg" alt="Activity" class="card__image" />
         <h3 class="card__title">The blue marine discovery<br />quest</h3>
-        <button class="card__button">Book Now</button>
+        <button class="card__button" data-toggle="modal">Book Now</button>
       </div>
       <!-- /.card -->
     </div>

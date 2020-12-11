@@ -73,4 +73,4 @@ try {
 }
 
 // Отображение результата
-header("Location: /tour-plan/thanks.php?result=" . $result . "&type=" . $formType);
+header("Location: /thanks.php?result=" . $result . "&type=" . $formType);

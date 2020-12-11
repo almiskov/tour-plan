@@ -45,11 +45,15 @@ $(document).ready(function() {
   modalButton.on('click', function(e) {
     e.preventDefault();
     modal.toggleClass('modal_visible');
+    modal.hasClass('modal_visible')
+      ? document.body.style.overflow = 'hidden'
+      : document.body.style.overflow = ''
   })
 
   $('body').keyup(function(e){
     if(e.key == 'Escape' && modal.hasClass('modal_visible')){
       modal.removeClass('modal_visible');
+      document.body.style.overflow = ''
     }
   });
 
