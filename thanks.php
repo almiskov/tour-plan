@@ -27,10 +27,7 @@ if ($result == 'success') {
     <div class="thanks__message">
       <?php echo $message; ?>
     </div>
-
-    <div class="thanks__link-container">
-      <a class="thanks__back-link" href="javascript:history.back()">Go back</a>
-    </div>
+    <a class="button thanks__back-link" href="javascript:history.back()">Go back</a>
   </div>
   <!-- /.container -->
 </section>
