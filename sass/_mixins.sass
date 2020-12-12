@@ -23,16 +23,17 @@
   @media (max-width: 767px)
     top: 23px !important
 @mixin hoverable_link($left, $right, $brs, $color, $alpha: 0.07)
-  cursor: pointer
-  &:after
-    content: ''
-    position: absolute
-    top: 0
-    bottom: 0
-    left: $left
-    right: $right
-    border-radius: $brs
-    background-color: rgba($color, 0)
-    transition: background-color 100ms ease-in
-  &:hover::after
-    background-color: rgba($color, $alpha)
+  @media (min-width: 992px)
+    cursor: pointer
+    &:after
+      content: ''
+      position: absolute
+      top: 0
+      bottom: 0
+      left: $left
+      right: $right
+      border-radius: $brs
+      background-color: rgba($color, 0)
+      transition: background-color 100ms ease-in
+    &:hover::after
+      background-color: rgba($color, $alpha)

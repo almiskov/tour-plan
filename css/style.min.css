@@ -71,16 +71,16 @@ svg {
   color: #ffffff;
 }
 
-.button, .search__button, .package__button, .subscribe__button, .card__button {
-  transition: background-color 150ms ease-in-out;
-}
-
-.button:hover, .search__button:hover, .package__button:hover, .subscribe__button:hover, .card__button:hover {
-  background-color: #ee3759;
-}
-
-.button:active, .search__button:active, .package__button:active, .subscribe__button:active, .card__button:active {
-  background-color: #e3133b;
+@media (min-width: 992px) {
+  .button, .search__button, .package__button, .subscribe__button, .card__button {
+    transition: background-color 150ms ease-in-out;
+  }
+  .button:hover, .search__button:hover, .package__button:hover, .subscribe__button:hover, .card__button:hover {
+    background-color: #ee3759;
+  }
+  .button:active, .search__button:active, .package__button:active, .subscribe__button:active, .card__button:active {
+    background-color: #e3133b;
+  }
 }
 
 label.error {
@@ -472,23 +472,26 @@ template {
 
 .navbar-menu__item {
   position: relative;
-  cursor: pointer;
 }
 
-.navbar-menu__item:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -7px;
-  right: -7px;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0);
-  transition: background-color 100ms ease-in;
-}
-
-.navbar-menu__item:hover::after {
-  background-color: rgba(255, 255, 255, 0.07);
+@media (min-width: 992px) {
+  .navbar-menu__item {
+    cursor: pointer;
+  }
+  .navbar-menu__item:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -7px;
+    right: -7px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    transition: background-color 100ms ease-in;
+  }
+  .navbar-menu__item:hover::after {
+    background-color: rgba(255, 255, 255, 0.07);
+  }
 }
 
 .navbar-menu__item_mobile_visible {
@@ -543,6 +546,7 @@ template {
   display: flex;
   align-items: center;
   text-decoration: none;
+  position: relative;
 }
 
 .user__avatar {
@@ -561,6 +565,26 @@ template {
 
 .navbar__search_mobile_visible, .navbar__user_mobile_visible {
   display: none;
+}
+
+@media (min-width: 992px) {
+  .user__name {
+    position: relative;
+  }
+  .user__name:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -6px;
+    right: -6px;
+    border-radius: 10px;
+    background-color: rgba(51, 51, 51, 0);
+    transition: background-color 100ms ease-in;
+  }
+  .user:hover .user__name:after {
+    background-color: rgba(51, 51, 51, 0.15);
+  }
 }
 
 .breadcrumb-list {
@@ -586,23 +610,26 @@ template {
   color: inherit;
   border-radius: 4px;
   position: relative;
-  cursor: pointer;
 }
 
-.breadcrumb-list__link:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -3px;
-  right: -3px;
-  border-radius: 6px;
-  background-color: rgba(51, 51, 51, 0);
-  transition: background-color 100ms ease-in;
-}
-
-.breadcrumb-list__link:hover::after {
-  background-color: rgba(51, 51, 51, 0.25);
+@media (min-width: 992px) {
+  .breadcrumb-list__link {
+    cursor: pointer;
+  }
+  .breadcrumb-list__link:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -3px;
+    right: -3px;
+    border-radius: 6px;
+    background-color: rgba(51, 51, 51, 0);
+    transition: background-color 100ms ease-in;
+  }
+  .breadcrumb-list__link:hover::after {
+    background-color: rgba(51, 51, 51, 0.25);
+  }
 }
 
 .hotel {
@@ -837,23 +864,26 @@ template {
   color: inherit;
   text-decoration: none;
   position: relative;
-  cursor: pointer;
 }
 
-.booking__number:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -6px;
-  right: -6px;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0);
-  transition: background-color 100ms ease-in;
-}
-
-.booking__number:hover::after {
-  background-color: rgba(255, 255, 255, 0.07);
+@media (min-width: 992px) {
+  .booking__number {
+    cursor: pointer;
+  }
+  .booking__number:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -6px;
+    right: -6px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    transition: background-color 100ms ease-in;
+  }
+  .booking__number:hover::after {
+    background-color: rgba(255, 255, 255, 0.07);
+  }
 }
 
 .booking__num {
@@ -1431,10 +1461,19 @@ template {
   min-width: 83px;
 }
 
+@media (min-width: 992px) {
+  .footer__social-link {
+    transition: transform 100ms ease-in;
+  }
+  .footer__social-link:hover {
+    transform: scale(1.2, 1.2);
+  }
+}
+
 .footer__contact-details {
   grid-column: span 2;
   margin-left: -4px;
-  margin-top: 2px;
+  margin-top: 24;
 }
 
 .footer__contact-form {
@@ -1453,23 +1492,26 @@ template {
   white-space: nowrap;
   color: inherit;
   position: relative;
-  cursor: pointer;
 }
 
-.footer__contact-link:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -2px;
-  right: -2px;
-  border-radius: 6px;
-  background-color: rgba(255, 255, 255, 0);
-  transition: background-color 100ms ease-in;
-}
-
-.footer__contact-link:hover::after {
-  background-color: rgba(255, 255, 255, 0.07);
+@media (min-width: 992px) {
+  .footer__contact-link {
+    cursor: pointer;
+  }
+  .footer__contact-link:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -2px;
+    right: -2px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0);
+    transition: background-color 100ms ease-in;
+  }
+  .footer__contact-link:hover::after {
+    background-color: rgba(255, 255, 255, 0.07);
+  }
 }
 
 .footer__contact-wrapper {
@@ -1549,23 +1591,26 @@ template {
   text-decoration: none;
   color: inherit;
   position: relative;
-  cursor: pointer;
 }
 
-.footer__link:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -6px;
-  right: -6px;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0);
-  transition: background-color 100ms ease-in;
-}
-
-.footer__link:hover::after {
-  background-color: rgba(255, 255, 255, 0.07);
+@media (min-width: 992px) {
+  .footer__link {
+    cursor: pointer;
+  }
+  .footer__link:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -6px;
+    right: -6px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    transition: background-color 100ms ease-in;
+  }
+  .footer__link:hover::after {
+    background-color: rgba(255, 255, 255, 0.07);
+  }
 }
 
 .footer__link-icon {
