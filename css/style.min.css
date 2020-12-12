@@ -1402,6 +1402,19 @@ template {
 
 .footer__categories {
   grid-row: 1 / 4;
+  margin-left: 6px;
+}
+
+.footer__additional {
+  margin-left: 5px;
+}
+
+.footer__legal {
+  margin-right: 5px;
+}
+
+.footer__social {
+  margin: 4px 0 0 5px;
 }
 
 .footer__social-network {
@@ -1420,10 +1433,14 @@ template {
 
 .footer__contact-details {
   grid-column: span 2;
+  margin-left: -4px;
+  margin-top: 2px;
 }
 
 .footer__contact-form {
   grid-column: span 2;
+  margin-left: 5px;
+  margin-top: 2px;
 }
 
 .footer__contact-link {
@@ -1626,7 +1643,7 @@ template {
 }
 
 .contact-details__item:not(:last-child) {
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 
 .contact-form__title {
@@ -1786,7 +1803,7 @@ template {
     margin-left: 48px;
   }
   .navbar-menu {
-    padding: 22px 14px;
+    padding: 21px 14px;
   }
   .navbar-menu__link {
     font-size: 12px;
@@ -1801,7 +1818,13 @@ template {
     line-height: 38px;
   }
   .reviews-slider__button {
-    top: 157px;
+    top: 158px;
+  }
+  .reviews-slider__button-prev {
+    left: 0;
+  }
+  .reviews-slider__button-next {
+    right: 0;
   }
   .reviews-slider__text {
     max-height: 133px;
@@ -1889,20 +1912,29 @@ template {
     grid-row: 1 / 2;
     grid-column: 2 / 4;
     align-self: center;
+    margin-top: 13px;
+    margin-left: -12px;
   }
   .footer__additional {
-    justify-self: flex-end;
+    justify-self: flex-start;
+    margin-left: 0;
+  }
+  .footer__legal {
+    justify-self: flex-start;
   }
   .footer__categories {
     grid-row: 2 / 3;
+    margin-left: 0;
   }
   .footer__contact-details {
     grid-column: span 3;
-    margin-top: 10px;
+    margin-top: 11px;
+    margin-left: 0;
   }
   .footer__contact-form {
     grid-column: span 3;
-    margin-top: 9px;
+    margin-top: 10px;
+    margin-left: 0;
   }
   .footer__form {
     width: 539px;
@@ -2369,9 +2401,14 @@ template {
   }
   .footer__social {
     flex-wrap: wrap;
+    margin-top: -1px;
   }
   .footer__social-links {
     margin-top: 20px;
+  }
+  .footer__contact-details {
+    margin-top: 13px;
+    margin-left: -1px;
   }
   .footer__logo {
     margin-bottom: 12px;
@@ -2388,6 +2425,12 @@ template {
   }
   .footer__bottom {
     margin-top: 30px;
+  }
+  .footer__icon-wrapper {
+    min-width: 27px;
+  }
+  .contact-details__title {
+    margin-bottom: 24px;
   }
   .contact-form__title {
     margin-bottom: 15px;
