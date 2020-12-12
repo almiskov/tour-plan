@@ -43,6 +43,8 @@
       text-decoration: none
       white-space: nowrap
       color: inherit
+      position: relative
+      @include hoverable_link(-2px, -2px, 6px, $light)
     &-wrapper
       display: flex
       flex-direction: column
@@ -98,6 +100,8 @@
   &__link
     text-decoration: none
     color: inherit
+    position: relative
+    @include hoverable_link(-6px, -6px, 10px, $light)
     &-icon
       height: 20px
       width: 20px

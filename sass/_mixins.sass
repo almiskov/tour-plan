@@ -22,17 +22,17 @@
   line-height: 10px
   @media (max-width: 767px)
     top: 23px !important
-    TODO: Зафигачить миксину для ховерабл ссылок, чтобы передавать туда лефт райт и бордер радиус, можно ещё и колор, чтобы для бредкрамбсов можно было юзать
-@mixin hoverable_link(left, right, brs)
+@mixin hoverable_link($left, $right, $brs, $color, $alpha: 0.07)
+  cursor: pointer
   &:after
     content: ''
     position: absolute
     top: 0
     bottom: 0
-    left: $lepx
-    right: -6px
-    border-radius: 10px
-    background-color: rgba($light, 0)
+    left: $left
+    right: $right
+    border-radius: $brs
+    background-color: rgba($color, 0)
     transition: background-color 100ms ease-in
   &:hover::after
-    background-color: rgba($light, 0.1)
+    background-color: rgba($color, $alpha)

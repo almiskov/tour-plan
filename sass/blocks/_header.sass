@@ -29,19 +29,8 @@
       font-size: 14px
       line-height: 18px
     &__item
-      &_hoverable
-        position: relative
-        &:after
-          content: ''
-          position: absolute
-          left: 0
-          bottom: -2px
-          height: 1px
-          width: 0
-          background-color: $light
-          transition: width 250ms ease-in-out
-        &:hover::after
-          width: 100%
+      position: relative
+      @include hoverable_link(-7px, -7px, 10px, $light)
       &_mobile
         &_visible
           display: none
