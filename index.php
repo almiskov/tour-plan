@@ -99,13 +99,13 @@
             <span class="booking__heading">Quick Booking</span>
             <a class="booking__number" href="tel:12100">
               <svg class="booking__icon">
-                  <use xlink:href="./img/svg/sprite.svg#phone-call"></use>
-                </svg>
+                <use xlink:href="./img/svg/sprite.svg#phone-call"></use>
+              </svg>
               <span class="booking__num">12100</span>
             </a>
           </div>
           <!-- /.booking__call-center -->
-          <button data-toggle="modal" class="button booking__button">
+          <button data-toggle="modal" class="button booking__button book-now-button" value="GRAND HILTON HOTEL">
             View Other Options
           </button>
         </div>
@@ -186,7 +186,7 @@
               <span class="package__pricetag-new">$ 8,500</span>
             </div>
             <!-- /.package__prices -->
-            <button class="package__button" data-toggle="modal">Book Now</button>
+            <button class="package__button book-now-button" data-toggle="modal" value="Hotel Blue Haven">Book Now</button>
           </div>
           <!-- /.package__bottom -->
         </div>
@@ -201,7 +201,7 @@
         <div class="package__info package__info_small">
           <div class="package__top">
             <div class="stars package__stars package__stars_small">
-            <svg class="star">
+              <svg class="star">
                 <use xlink:href="./img/svg/sprite.svg#star"></use>
               </svg>
               <svg class="star">
@@ -253,7 +253,7 @@
               <span class="package__pricetag-new">$ 3,000</span>
             </div>
             <!-- /.package__prices -->
-            <button class="package__button" data-toggle="modal">Book Now</button>
+            <button class="package__button book-now-button" data-toggle="modal" value="LUX* Belle Mare">Book Now</button>
           </div>
           <!-- /.package__bottom -->
         </div>
@@ -320,7 +320,7 @@
               <span class="package__pricetag-new">$ 9,500</span>
             </div>
             <!-- /.package__prices -->
-            <button class="package__button" data-toggle="modal">Book Now</button>
+            <button class="package__button book-now-button" data-toggle="modal" value="White Palace">Book Now</button>
           </div>
           <!-- /.package__bottom -->
         </div>
@@ -387,7 +387,7 @@
               <span class="package__pricetag-new">$ 2,500</span>
             </div>
             <!-- /.package__prices -->
-            <button class="package__button" data-toggle="modal">Book Now</button>
+            <button class="package__button book-now-button" data-toggle="modal" value="Luxury Place">Book Now</button>
           </div>
           <!-- /.package__bottom -->
         </div>
@@ -402,7 +402,7 @@
         <div class="package__info package__info_small">
           <div class="package__top">
             <div class="stars package__stars package__stars_small">
-            <svg class="star">
+              <svg class="star">
                 <use xlink:href="./img/svg/sprite.svg#star"></use>
               </svg>
               <svg class="star">
@@ -454,7 +454,7 @@
               <span class="package__pricetag-new">$ 3,500</span>
             </div>
             <!-- /.package__prices -->
-            <button class="package__button" data-toggle="modal">Book Now</button>
+            <button class="package__button book-now-button" data-toggle="modal" value="Hotel Five Star">Book Now</button>
           </div>
           <!-- /.package__bottom -->
         </div>
@@ -632,13 +632,13 @@
       <div class="card activities__card" data-aos="fade-up">
         <img src="./img/activities/activity-1.jpg" alt="Activity" class="card__image" />
         <h3 class="card__title">The curious corner<br />of chamarel</h3>
-        <button class="card__button" data-toggle="modal">Book Now</button>
+        <button class="card__button book-now-button" data-toggle="modal" value="Activity: The curious corner of chamarel">Book Now</button>
       </div>
       <!-- /.card -->
       <div class="card activities__card" data-aos="fade-up">
         <img src="./img/activities/activity-2.jpg" alt="Activity" class="card__image" />
         <h3 class="card__title">Gymkhana club golf<br />course</h3>
-        <button class="card__button" data-toggle="modal">Book Now</button>
+        <button class="card__button book-now-button" data-toggle="modal" value="Activity: Gymkhana club golf course">Book Now</button>
       </div>
       <!-- /.card -->
       <div class="card activities__card" data-aos="fade-up">
@@ -646,13 +646,13 @@
         <h3 class="card__title">
           Tamarind falls hiking<br />trip - full day
         </h3>
-        <button class="card__button" data-toggle="modal">Book Now</button>
+        <button class="card__button book-now-button" data-toggle="modal" value="Activity: Tamarind falls hiking trip - full day">Book Now</button>
       </div>
       <!-- /.card -->
       <div class="card activities__card" data-aos="fade-up">
         <img src="./img/activities/activity-4.jpg" alt="Activity" class="card__image" />
         <h3 class="card__title">The blue marine discovery<br />quest</h3>
-        <button class="card__button" data-toggle="modal">Book Now</button>
+        <button class="card__button book-now-button" data-toggle="modal" value="Activity: The blue marine discovery quest">Book Now</button>
       </div>
       <!-- /.card -->
     </div>
@@ -671,7 +671,7 @@
       </svg>
     </a>
     <h3 class="modal__title">Booking</h3>
-    <form action="#" class="form modal__form">
+    <form action="./php/send.php" method="POST" class="form modal__form">
       <div class="modal__form-group">
         <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2" />
       </div>
@@ -683,6 +683,7 @@
       </div>
       <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
       <input type="hidden" name="form_type" value="booking" />
+      <input type="hidden" name="booking_type" />
       <button class="button modal__button">Send</button>
       <span class="modal__info">* Required Fields</span>
     </form>

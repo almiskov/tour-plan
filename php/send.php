@@ -10,7 +10,7 @@ $formType = $_POST['form_type'];
 if ($formType == 'newsletter') {
   $email = $_POST['email'];
 
-  $title = "Новое подписка Best Tour Plan";
+  $title = "Новая подписка Best Tour Plan";
   $body = "<h2>Внести пользователя " . $email . " в рассылку</h2>";
 
   $successMessage = "Вы подписались на рассылку Best Tour Plan!";
@@ -25,6 +25,25 @@ if ($formType == 'newsletter') {
   <h2>Новое письмо</h2>
   <b>Имя:</b> $name<br>
   <b>Номер телефона:</b> $phone<br><br>
+  <b>Сообщение:</b><br>$message
+  ";
+
+  $successMessage = "Сообщение отправлено!";
+  $errorMessage = "Сообщение не отправлено!";
+} elseif ($formType == 'booking') {
+  $name = $_POST['name'];
+  $phone = $_POST['phone'];
+  $email = $_POST['email'];
+  $message = $_POST['message'];
+
+  $bookingType = $_POST['booking_type'];
+
+  $title = "Новое бронирование Best Tour Plan";
+  $body = "
+  <h2>Новое бронирование: " . $bookingType . "</h2>
+  <b>Имя:</b> $name<br>
+  <b>Номер телефона:</b> $phone<br><br>
+  <b>Email:</b> $email<br><br>
   <b>Сообщение:</b><br>$message
   ";
 
@@ -73,4 +92,9 @@ try {
 }
 
 // Отображение результата
-header("Location: /thanks.php?result=" . $result . "&type=" . $formType);
+$location = "Location: /thanks.php?result=" . $result . "&type=" . $formType;
+if ($formType == 'booking') {
+  $location = $location . "&bookingType=" . $bookingType;
+}
+
+header($location);

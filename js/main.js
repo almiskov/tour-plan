@@ -1,6 +1,10 @@
 $(document).ready(function() {
   AOS.init();
 
+  $('.book-now-button').on('click', function(e) {
+    $('input[name=booking_type]').val(e.target.value)
+  })
+
   var hotelSlider = new Swiper('.hotel-slider', {
   // Optional parameters
   loop: true,
