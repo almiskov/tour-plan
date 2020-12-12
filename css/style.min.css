@@ -1082,12 +1082,12 @@ template {
 }
 
 .reviews-slider__button-prev {
-  left: 0;
+  left: 16px;
   background-image: url(../img/reviews-arrow-prev.svg);
 }
 
 .reviews-slider__button-next {
-  right: 0;
+  right: 19px;
   background-image: url(../img/reviews-arrow-next.svg);
 }
 
