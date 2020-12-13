@@ -33,7 +33,7 @@
       padding-bottom: 30px
     &__search
       &-wrapper
-        margin-left: 48px
+        margin-left: auto
     &-menu
       padding: 21px 14px
       &__link
@@ -184,10 +184,11 @@
       position: fixed
       left: 0
       right: 0
-      bottom: 0
+      height: calc(100vh - 74px)
       top: 74px
       &_visible
         display: block
+        overflow-y: auto
     &-menu
       padding-top: 31px
       flex-direction: column
@@ -345,6 +346,7 @@
   .navbar
     &-bottom
       top: 70px
+      height: calc(100vh - 70px)
   .search
     &__input
       width: 245px
@@ -546,25 +548,6 @@
     &__message
       height: 6em
       margin-bottom: 10px
-
-@media (max-width: 767px) and (orientation: landscape)
-  .navbar
-    &-menu
-      flex-direction: row
-      flex-wrap: wrap
-      justify-content: space-between
-      &__item
-        margin-bottom: 0 !important
-        text-align: right
-        &:nth-child(1)
-          flex-basis: auto
-        &:nth-child(2)
-          flex-basis: auto
-        &:nth-child(n+3)
-          flex-basis: 40%
-          margin-top: 15px !important
-        &:last-child
-          flex-grow: 1
 @media (min-width: 320px) and (max-width: 479px) and (orientation: landscape)
   .search
     &__input

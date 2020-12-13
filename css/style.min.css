@@ -1845,7 +1845,7 @@ template {
     padding-bottom: 30px;
   }
   .navbar__search-wrapper {
-    margin-left: 48px;
+    margin-left: auto;
   }
   .navbar-menu {
     padding: 21px 14px;
@@ -2034,11 +2034,12 @@ template {
     position: fixed;
     left: 0;
     right: 0;
-    bottom: 0;
+    height: calc(100vh - 74px);
     top: 74px;
   }
   .navbar-bottom_visible {
     display: block;
+    overflow-y: auto;
   }
   .navbar-menu {
     padding-top: 31px;
@@ -2241,6 +2242,7 @@ template {
   }
   .navbar-bottom {
     top: 70px;
+    height: calc(100vh - 70px);
   }
   .search__input {
     width: 245px;
@@ -2514,31 +2516,6 @@ template {
   .modal__message {
     height: 6em;
     margin-bottom: 10px;
-  }
-}
-
-@media (max-width: 767px) and (orientation: landscape) {
-  .navbar-menu {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .navbar-menu__item {
-    margin-bottom: 0 !important;
-    text-align: right;
-  }
-  .navbar-menu__item:nth-child(1) {
-    flex-basis: auto;
-  }
-  .navbar-menu__item:nth-child(2) {
-    flex-basis: auto;
-  }
-  .navbar-menu__item:nth-child(n+3) {
-    flex-basis: 40%;
-    margin-top: 15px !important;
-  }
-  .navbar-menu__item:last-child {
-    flex-grow: 1;
   }
 }
 
